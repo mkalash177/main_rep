@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <link href="/examples/vendors/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <button type="button" class="btn btn-primary" data-toggle="popover" title="Сообщение"
+            data-content="Ура, Bootstrap 4 работает">Поднеси ко мне курсор
+    </button>
+    <button type="button" class="btn btn-primary">Primary</button>
+
+</div>
+
+
+<script src="/examples/vendors/jquery/jquery-3.3.1.min.js"></script>
+
+<script src="/examples/vendors/popper.js/popper.min.js"></script>
+
+<script src="/examples/vendors/bootstrap-4/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover({trigger:'hover'});
+    });
+</script>
+
+</body>
+</html>             
+
+              
